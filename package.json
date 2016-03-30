@@ -1,0 +1,23 @@
+{
+  "name": "map_lab",
+  "version": "1.0.0",
+  "description": "##Extending the country application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancescoPalma/Homework_Week7_Day3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancescoPalma/Homework_Week7_Day3/issues"
+  },
+  "homepage": "https://github.com/FrancescoPalma/Homework_Week7_Day3#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
