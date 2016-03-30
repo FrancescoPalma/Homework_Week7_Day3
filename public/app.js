@@ -22,6 +22,18 @@ var main = function (countries) {
     }
     updateDisplay(selected);
     document.querySelector('#info').style.display = 'block';
+
+    var createMap = function(countries) {
+        var zoom = 5;
+        var center = {lat: 55.9520, lng: -3.1900};
+        var map = new Map(zoom, center);
+
+        map.bindClick();
+
+        map.addInfoWindow(center, 'Info');
+    }
+    createMap();
+
 }
 
 var populateSelect = function (countries) {
@@ -42,9 +54,11 @@ var populateSelect = function (countries) {
     }, false);
 }
 
-var updateDisplay = function (lala) {
+var updateDisplay = function (country) {
     var tags = document.querySelectorAll('#info p');
-    tags[0].innerText = lala.name;
-    tags[1].innerText = lala.population;
-    tags[2].innerText = lala.capital;
+    tags[0].innerText = country.name;
+    tags[1].innerText = country.population;
+    tags[2].innerText = country.capital;
 }
+
+
